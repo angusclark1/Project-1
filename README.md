@@ -44,7 +44,13 @@ For this part of the assignment, use the Old Age and New Age returns Dataframe t
 1. Use the newly made DataFrame (completed in the previous task) named group_df which includes the performance of all portfolios daily returns. 
 2. Using MCForecastTool.py, create a Monte Carlo Simulation for the DataFrame for a 2 year simulation. Be sure to do the following: num_simulation=300, num_trading_days=252*2 and set weights )
 3. Using the calc.cumulative_return() function, calculate the Dataframes 2-year cumulative return.
-4. Plot the MCSimulation
+4. Plot the MCSimulation and Distribution
+
+- Note that your resulting Monte Carlo Simulation and Distribution Plot should appear similar to the following image
+
+<img width="590" alt="Screen Shot 2022-07-07 at 8 27 42 pm" src="https://user-images.githubusercontent.com/102783432/177758341-2278b4b9-cb15-44bc-8858-85915339a31d.png">
+
+<img width="468" alt="Screen Shot 2022-07-07 at 8 30 55 pm" src="https://user-images.githubusercontent.com/102783432/177758676-d8785c07-3b13-4fc2-94c1-439e287f066e.png">
 
 ## Compare the performance of both portfolios against more historical data in a 10-year time frame.
 For this part of the assignment, use the Old Age and New Age returns Dataframe to compare how both portfolios performed in comparison to more historical data. To do so, complete the following steps:
@@ -56,10 +62,6 @@ For this part of the assignment, use the Old Age and New Age returns Dataframe t
 
 ## Compare and Analyse the plots in order to determine which portfolio may be most sensible.
 Run Monte Carlos Simulations to compare and analyze how both portfolios differentiate to the future market.
-
-- Note that your resulting Monte Carlo Simulation should appear similar to the following image
-
-<img width="590" alt="Screen Shot 2022-07-07 at 8 27 42 pm" src="https://user-images.githubusercontent.com/102783432/177758190-4919cbb8-37d2-4da4-a543-4a10b7ceeef3.png">
 
 ## Analysis and describe the difference in performance.
 Provide a detailed analysis and description on the differences in the performances of the portfolios against one another. 
