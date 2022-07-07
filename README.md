@@ -64,10 +64,20 @@ For this part of the assignment, use the Old Age and New Age returns Dataframe t
 ## Compare the performance of both portfolios against more historical data (Dow Jones Industrial Average) in a 10-year time frame.
 For this part of the assignment, use the Old Age and New Age returns Dataframe to compare how both portfolios performed in comparison to The Dow Jones. To do so, complete the following steps:
 
-1. Using the Data, read in the Data Frame and display.
-2. Using MCForecastTool.py, create a Monte Carlo Simulation for the DataFrame for a 10-year simulation. Be sure to do the following: num_simulation=300, num_trading_days=252*10 and set weights )
-3. Using the cumulative_returns function, calculate the Dataframe’s 10-year cumulative return for the Dataframe
-4. Plot the MCSimulation’s and the Distribution
+1. Create a new DataFrame including the Dow Jones.
+2. Identify and Set an appropriate ticker for The Dow Jones .
+3. Set start and end date within the df
+4. Display DataFrame
+5. Convert The Dow Jones closing prices to returns
+6. Plot The Dow Jones cumulative returns
+7. Calculate the daily standard deviation of all portfolios
+8. Calculate the annualized standard deviation (252 trading days)
+9. Calculate the rolling standard deviation of all portfolios using a 21-day window
+10. Plot the rolling standard deviation
+11. Calculate the correlation and display the correlation matrix
+12. Visualise the correlation in a heatmap
+13. Calculate Annualized Sharpe Ratios
+14. Visualize the sharpe ratios as a bar plot
 
 ## Compare and Analyse the plots in order to determine which portfolio may be most sensible.
 Run Monte Carlos Simulations to compare and analyze how both portfolios differentiate to the future market.
