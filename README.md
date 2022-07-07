@@ -12,7 +12,7 @@ A Jupyter notebook that contains an analysis of the portfolio of the new age of 
 
 ### Project Analysis 
 
-- Use the Project1.ipynb notebook to visualize and analyze the new and old age financial entities which can be accessed within the Project Challenge files above, in a CSV file. .
+- Use the Project1.ipynb notebook to visualize and analyze the new and old age financial entities which can be accessed within the Project Challenge files.
 
 Note that this assignment requires you to create a Monte Carlo Simulation . 
 
@@ -28,21 +28,30 @@ Analysis and describe the difference in performance. Suggest why one investment 
 
 ## Pull in the data and analyze how the two portfolios track in the current market.
 
-For this part of the assignment, use the two portfolios to analyze how both portfolios compare to one another.
-First, you will read in and clean several CSV files for analysis. The CSV files contain data on whale portfolio returns, algorithmic trading portfolio returns, and S&P TSX 60 historical prices. Use the Whale Analysis starter code to complete the following steps:
+For this part of the assignment, two portfolios will be used to analyze, in order to show how both portfolios compare to one another.
 
-1. Use Pandas to read the following CSV files into DataFrames. 
- -new_age.csv: Contains returns of some famous new age technology and financial businesses.
- -old_age.csv: Contains returns of some famous old age technology and financial businesses.
-2. Identify and remove null values.
-3. Both the new and old age portfolio’s CSV files contain closing prices, therefore both portfolio’s closing prices must be converted to daily returns.
-4. Join New Age Returns and the Old Age Returns into a single DataFrame called group_df with columns for each portfolio's closing prices.
+1. Import neccessary tools for analysis
+- Pandas as pd
+- MCSimulation from MCForecastTools
+- yfinance as yf
+- matplotlib.pyplot as plt
+- seaborn as sns
+- hvplot as hv
+- streamlit as st
+
+2. Identify and Set appropriate tickers for both Old Age and New Age Returns.
+3. Create a DataFrame which includes tickers
+4. Set start and end date within the df
+5. Drop all null values from both Portfolio's
+6. Visualise the data in order to confirm no values are missing (Using a Heatmap)
 
 ## Compare how both Portfolios performed in comparison to 2 years previously (Perform Quantitative Analysis)
 For this part of the assignment, use the Old Age and New Age returns Dataframe to compare how both portfolios performed in comparison to both 2 years prior. To do so, complete the following steps:
 
-1. Use the newly made DataFrame (completed in the previous task) named group_df which includes the performance of all portfolios daily returns. 
-2. Using MCForecastTool.py, create a Monte Carlo Simulation for the DataFrame for a 2 year simulation. Be sure to do the following: num_simulation=300, num_trading_days=252*2 and set weights )
+- Note in order to visualise simulations, download MCS files.
+
+1. Create a new DataFrame named MC_two_year, which includes the original DataFrame, as well as weights, number of trading days and number of simulations.
+2. Using MCForecastTool.py, create a Monte Carlo Simulation for the DataFrame for a 2 year simulation. Be sure to do the following: num_simulation=1000, num_trading_days=252*2 and set weights to 0.1 respectively.
 3. Using the calc.cumulative_return() function, calculate the Dataframes 2-year cumulative return.
 4. Plot the MCSimulation and Distribution
 
