@@ -61,10 +61,10 @@ For this part of the assignment, use the Old Age and New Age returns Dataframe t
 
 <img width="468" alt="Screen Shot 2022-07-07 at 8 30 55 pm" src="https://user-images.githubusercontent.com/102783432/177758676-d8785c07-3b13-4fc2-94c1-439e287f066e.png">
 
-## Compare the performance of both portfolios against more historical data in a 10-year time frame.
-For this part of the assignment, use the Old Age and New Age returns Dataframe to compare how both portfolios performed in comparison to more historical data. To do so, complete the following steps:
+## Compare the performance of both portfolios against more historical data (Dow Jones Industrial Average) in a 10-year time frame.
+For this part of the assignment, use the Old Age and New Age returns Dataframe to compare how both portfolios performed in comparison to The Dow Jones. To do so, complete the following steps:
 
-1. Using the group_df, read in the Data Frame and display.
+1. Using the Data, read in the Data Frame and display.
 2. Using MCForecastTool.py, create a Monte Carlo Simulation for the DataFrame for a 10-year simulation. Be sure to do the following: num_simulation=300, num_trading_days=252*10 and set weights )
 3. Using the cumulative_returns function, calculate the Dataframe’s 10-year cumulative return for the Dataframe
 4. Plot the MCSimulation’s and the Distribution
