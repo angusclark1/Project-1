@@ -59,10 +59,7 @@ Run Monte Carlos Simulations to compare and analyze how both portfolios differen
 
 - Note that your resulting Monte Carlo Simulation should appear similar to the following image
 
-
-
-
-
+<img width="590" alt="Screen Shot 2022-07-07 at 8 27 42 pm" src="https://user-images.githubusercontent.com/102783432/177758190-4919cbb8-37d2-4da4-a543-4a10b7ceeef3.png">
 
 ## Analysis and describe the difference in performance.
 Provide a detailed analysis and description on the differences in the performances of the portfolios against one another. 
