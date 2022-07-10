@@ -101,3 +101,4 @@ Remember to take into account the current Economic Factors:
 - The effects of Australia’s heavy investment in the property market during all-time low-interest rates.
 - The possibility for the economy to hit an economical downswing.
 - Human-related effects (e.g. failing to meet mortgage repayments).
+
