@@ -80,7 +80,14 @@ For this part of the assignment, use the Old Age and New Age returns Dataframe t
 14. Visualize the sharpe ratios as a bar plot
 
 ## Compare and Analyse the plots in order to determine which portfolio may be most sensible.
-Run Monte Carlos Simulations to compare and analyze how both portfolios differentiate to the future market.
+For this part of the assignment, using the ALPACA API and SECRET KEY, create a DataFrame with appropriate tickers in order to calculate the closing price, which will be used to find further calculations. To do so, complete the following steps with the use of the financial_calculation_tool.ipynb.
+
+1. Create a new DataFrame, in order to calculate closing prices for the old portfolio.
+2. Compute current value of shares using closing prices and shares amount.
+3. Fetch current share prices, and assess the new portfolio of Data.
+4. Print current values for both the new and old portfolio.
+5. Re-do steps 2-4 for the brk_close_price and cba_close_price.
+6. Assess and Present the value of the Portfolio.
 
 ## Analysis and describe the difference in performance.
 Provide a detailed analysis and description on the differences in the performances of the portfolios against one another. 
