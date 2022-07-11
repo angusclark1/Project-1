@@ -1,10 +1,10 @@
-#Project-1
+# Project-1
 
-##New Age vs Old Age: what comes out on top?
+## New Age vs Old Age: what comes out on top?
 
-###Background
+### Background
 
-###What You're Creating
+### What You're Creating
 
 This project aims to analyze and compare the performance of two portfolios:
 
@@ -26,7 +26,7 @@ Lithium (Global X Lithium & Battery Tech ETF) (LIT)
 Tesla (TSLA)
 Tether (USDT-USD)
 
-###Project Analysis
+### Project Analysis
 
 This project aims to analyse and compare the New and Old portfolios through the following files:
 ·      Portfolio Data and Analysis (Jupyter Notebook) - Used to collate and analyse Old and New Portfolios against the Dow Jones over a historical two year period
@@ -81,7 +81,7 @@ To further make analysis of the two portfolios, a MonteCarlo simulation has been
 
 To assess furthermore the difference between Monte Carlo simulations and the results that can be received, we added a few different components to the task, the new age simulation was ran 1000 times and our old age simulation was ran 100 times; this can create a varied result whilst both are accurate it highlights the versatility of the Monte Carlo Simulation. Our old age simulation we plotted ‘Daily Returns Behaviour’ and in our new age portfolio we plotted ‘Cummulative Return Trajectories’, creating these multi-faceted takes on the MCS to see how versatile both the simulation and the portfolios can be. Due to the nature of the volatility and fluctuation in our new age portfolio, the projected possible returns are much higher than the old age portfolio but as we all know, high risk high reward; the simulation highlights this. The causes of the fluctuation in our new age portfolio is due to the general volatility of the crypto centric new age portfolio. Both portfolios have shown optimal performance and by utilising the risk analysis tool of Monte Carlo, we have a more clearer picture of the future of these two portfolios.
 
-##Portfolio Value Calculation Tool
+## Portfolio Value Calculation Tool
 
 Tools used:
 ·      os
