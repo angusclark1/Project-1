@@ -47,3 +47,13 @@ computed, giving the current value of the new portfolio at $60,541.24. The New A
 Portfolio by almost $50,000. However, without the knowledge of the volatility of the Portfolio, it is unknown if it is safe. 
 
 Comparison of the Dow Jones
+
+Using a more historical Portfolio, provided the chance to assess how volatile and safe the other Portfolios were in comparison to a widely used 
+performance indicator for the movement of the stock market. The findings from the Heat Map showed that the Old Age Portfolio had high correlation with the
+Dow Jones, whilst the New Age Portfolio had low correlation. However, in order to get a more in-depth view of the correlation of each portfolio to the 
+Dow, Sharpe ratios weree utilised to find the percentage change of the portfolios in comparison to the Dow. It was graphed, showing that the New Age 
+Portfolio, did indeed have very high volatility and does not provide an indication of it's correlation with current market forces, unlike the Old Age 
+Portfolio which showed very low percentage change of 0.194, detailing it's likelihood to be influenced by the Dow. 
+
+The New Age Portfolio provides investors with a risky yet high performing portfolio, which may provide large returns, however with a greater likelihood to
+change over time, whilst the Old Age Portfolio, will continue a steady rise in price, but may not provide investments with a high profit. 
