@@ -1,104 +1,99 @@
-# Project-1
+#Project-1
 
-## New Age vs Old Age: what comes out on top?
+##New Age vs Old Age: what comes out on top?
 
-## Background
+###Background
 
-### What You're Creating
+###What You're Creating
 
-For this Challenge assignment, you’ll need to create and submit the following deliverables:
-A Jupyter notebook that contains an analysis of the portfolio of the new age of innovative businesses (such as buy now pay later, eco-technology and neo banks for example). Additionally, create another portfolio detailing the traditional financial businesses such as insurance and banking, in order to provide an analysis with professionally styled and formatted interactive visualizations and input. Remember to upload your Jupyter notebook for this assignment to the GitHub repository. Make sure to update the README.md file to explain the project and any information that’s needed to interact with the graphs and plots.
+This project aims to analyze and compare the performance of two portfolios:
 
+Old Portfolio – made up of more traditional investments. Holdings include;
 
-### Project Analysis 
+Walt Disney (DIS)
+Coco-Cola (KO)  
+CBA (CBA)
+Berkshire Hathaway (BRK-B)
+Johnson and Johnson (JNJ)
+Gold (SPDR Gold Shares) (GLD)
+ 
+New Portfolio – made up of new age investments. Holdings include;
 
-- Use the Project1.ipynb notebook to visualize and analyze the new and old age financial entities which can be accessed within the Project Challenge files.
+Apple (AAPL)
+Bitcoin (BTC)
+Etherium (ETH_USD)
+Lithium (Global X Lithium & Battery Tech ETF) (LIT)   
+Tesla (TSLA)
+Tether (USDT-USD)
 
-Note that this assignment requires you to create a Monte Carlo Simulation . 
+###Project Analysis
 
-- Use the project1.ipynb notebook to complete the following tasks:
+This project aims to analyse and compare the New and Old portfolios through the following files:
+·      Portfolio Data and Analysis (Jupyter Notebook) - Used to collate and analyse Old and New Portfolios against the Dow Jones over a historical two year period
+·      Portfolio Value Calculation Tool (Jupyter Notebook) - Used to calculate the current AUD value of the Old and New Port
+·      Monte Carlo Simulations (Jupyter Notebook) – Used to simulate the performance of the Old and New portfolios 5 years into the future 
 
-Pull in data and analyze how the two portfolios track in the current market in comparison to each other. 
+###Portfolio Data and Analysis:
 
-Compare how both portfolios performed in comparison to 2 years previously during the covid upswing in prices (particularly In tech). 
+Tools used:
+·      yfinance as yf
+·      pandas as pd
+·      numpy as np
+·      datetime as dt
+·      seaborn as sns
+·      pathlib import Path
+·      matplotlib.pyplot as plt
+·      seaborn as sns
+·      hvplot.pandas
 
-Compare the performance of both portfolios against more historical data in a 10-year time frame.
+Within this part of the project Yahoo Finance has been utilised to pull in historical data over a two year period to create two portfolios; Old Portfolio and New Portfolio.
 
-Analysis and describe the difference in performance. Suggest why one investment method may be preferable to the other. Taking into consideration the current economic climate of Australia and the world.
+A third portion of data has also been pulled in for the Dow Jones in order to compare the performance of the two portfolios against the performance of the Dow Jones Industrial Average, which consists of an index of 30 prominent companies listed on stock exchange in the United States. 
+ 
+This data has then been used to create two grouped data frames consisting of the percentage change in the closing prices and the cumulative returns for the instruments held within the New and Old Portfolio’s and the closing prices of the Dow Jones over a two year period. 
+ 
+This data can be manipulated by changing the set tickers at the beginning of the notebook.
+ 
+From the data frames created a few factors have been used to analyse and compare the portfolios against each other and against the performance of the Dow Jones.
+ 
+They have been compared using:
+ 
+Standard Deviation
+Cumulative Returns 
+Percentage Change
+Sharpe Ratios
 
-## Pull in the data and analyze how the two portfolios track in the current market.
+##Monte Carlo Simulations:
 
-For this part of the assignment, two portfolios will be used to analyze, in order to show how both portfolios compare to one another.
+Monte Carlo simulation performs risk analysis by building models of possible results by substituting a range of values—a probability distribution—for any factor that has inherent uncertainty. It then calculates results over and over, each time using a different set of random values from the probability functions.
 
-1. Import neccessary tools for analysis
-- Pandas as pd
-- MCSimulation from MCForecastTools
-- yfinance as yf
-- matplotlib.pyplot as plt
-- seaborn as sns
-- hvplot as hv
-- streamlit as st
+Tools used: 
+·      yfinance as yf
+·      pandas as pd
+·      numpy as np
+·     from MCForecastTools import MCSimulation 
+·      pathlib import Path
+·      matplotlib.pyplot as plt
+·      hvplot.pandas
+·      import os
 
-2. Identify and Set appropriate tickers for both Old Age and New Age Returns.
-3. Create a DataFrame which includes tickers
-4. Set start and end date within the df
-5. Drop all null values from both Portfolio's
-6. Visualise the data in order to confirm no values are missing (Using a Heatmap)
+To further make analysis of the two portfolios, a MonteCarlo simulation has been used. We used Yahoo Finance to collect and combine recent data to create the two data frames. Next, the simulation was imported and the weights, number of simulations and number of trading days was set. By then using the calculated cumulative return function, we calculated the cumulative return of the two portfolios and plotted the simulation results. To easier understand the returns, an investment of $10,000 was calculated with the simulated returns. The old age portfolio performed positively based on the simulation and over the 1000 simulations, there was a 95% chance the portfolio would be worth between $9184 and $14953 from the $10,000 investment. The new age portfolio was run 1000 times and from a $10,000 initial investment our portfolio in a year would be worth between $15,524 and $30,491. The accuracy of the simulation may be slightly lessened due to the market bounce back after coronavirus. 
 
-## Compare how both Portfolios performed in comparison to 2 years previously (Perform Quantitative Analysis)
-For this part of the assignment, use the Old Age and New Age returns Dataframe to compare how both portfolios performed in comparison to both 2 years prior. To do so, complete the following steps:
+To assess furthermore the difference between Monte Carlo simulations and the results that can be received, we added a few different components to the task, the new age simulation was ran 1000 times and our old age simulation was ran 100 times; this can create a varied result whilst both are accurate it highlights the versatility of the Monte Carlo Simulation. Our old age simulation we plotted ‘Daily Returns Behaviour’ and in our new age portfolio we plotted ‘Cummulative Return Trajectories’, creating these multi-faceted takes on the MCS to see how versatile both the simulation and the portfolios can be. Due to the nature of the volatility and fluctuation in our new age portfolio, the projected possible returns are much higher than the old age portfolio but as we all know, high risk high reward; the simulation highlights this. The causes of the fluctuation in our new age portfolio is due to the general volatility of the crypto centric new age portfolio. Both portfolios have shown optimal performance and by utilising the risk analysis tool of Monte Carlo, we have a more clearer picture of the future of these two portfolios.
 
-- Note in order to visualise simulations, download MCS files.
+##Portfolio Value Calculation Tool
 
-1. Create a new DataFrame named MC_two_year, which includes the original DataFrame, as well as weights, number of trading days and number of simulations.
-2. Using MCForecastTool.py, create a Monte Carlo Simulation for the DataFrame for a 2 year simulation. Be sure to do the following: num_simulation=1000, num_trading_days=252*2 and set weights to 0.1 respectively.
-3. Using the calc.cumulative_return() function, calculate the Dataframes 2-year cumulative return.
-4. Plot the MCSimulation and Distribution
-
-- Note that your resulting Monte Carlo Simulation and Distribution Plot should appear similar to the following image
-
-<img width="590" alt="Screen Shot 2022-07-07 at 8 27 42 pm" src="https://user-images.githubusercontent.com/102783432/177758341-2278b4b9-cb15-44bc-8858-85915339a31d.png">
-
-<img width="468" alt="Screen Shot 2022-07-07 at 8 30 55 pm" src="https://user-images.githubusercontent.com/102783432/177758676-d8785c07-3b13-4fc2-94c1-439e287f066e.png">
-
-## Compare the performance of both portfolios against more historical data (Dow Jones Industrial Average) in a 10-year time frame.
-For this part of the assignment, use the Old Age and New Age returns Dataframe to compare how both portfolios performed in comparison to The Dow Jones. To do so, complete the following steps:
-
-1. Create a new DataFrame including the Dow Jones.
-2. Identify and Set an appropriate ticker for The Dow Jones .
-3. Set start and end date within the df
-4. Display DataFrame
-5. Convert The Dow Jones closing prices to returns
-6. Plot The Dow Jones cumulative returns
-7. Calculate the daily standard deviation of all portfolios
-8. Calculate the annualized standard deviation (252 trading days)
-9. Calculate the rolling standard deviation of all portfolios using a 21-day window
-10. Plot the rolling standard deviation
-11. Calculate the correlation and display the correlation matrix
-12. Visualise the correlation in a heatmap
-13. Calculate Annualized Sharpe Ratios
-14. Visualize the sharpe ratios as a bar plot
-
-## Compare and Analyse the plots in order to determine which portfolio may be most sensible.
-For this part of the assignment, using the ALPACA API and SECRET KEY, create a DataFrame with appropriate tickers in order to calculate the closing price, which will be used to find further calculations. To do so, complete the following steps with the use of the financial_calculation_tool.ipynb.
-
-1. Create a new DataFrame, in order to calculate closing prices for the old portfolio.
-2. Compute current value of shares using closing prices and shares amount.
-3. Fetch current share prices, and assess the new portfolio of Data.
-4. Print current values for both the new and old portfolio.
-5. Re-do steps 2-4 for the brk_close_price and cba_close_price.
-6. Assess and Present the value of the Portfolio.
-
-## Analysis and describe the difference in performance.
-Provide a detailed analysis and description on the differences in the performances of the portfolios against one another. 
-Suggest why one Portfolio may be preferable to the other. 
-
-Remember to take into account the current Economic Factors:
-
-- Interest Rate fluctuations.
-- Inflation Rate fluctuations.
-- Probability of fluctuations in unemployment and wage growth failing to compete with inflation.
-- The effects of Australia’s heavy investment in the property market during all-time low-interest rates.
-- The possibility for the economy to hit an economical downswing.
-- Human-related effects (e.g. failing to meet mortgage repayments).
-
+Tools used:
+·      os
+·      requests
+·      json
+·      pandas as pd
+·      dotenv import load_dotenv
+·      alpaca_trade_api as tradeapi
+·      yfinance as yf
+·      %matplotlib inline
+ 
+Within this part of the project Yahoo Finance and Alpaca Trade API has been utilised to pull in current closing price data for all instruments held within the Old and New Portfolios in order to calculate the current AUD value of each portfolio.
+The tool can be manipulated to calculate the current value of an adjusted portfolio but changing the set tickers and updating the set units held of each ticker and updating the chosen closing prices.
+ 
+The tool calculates the current AUD value of both portfolios and prints a comparison statement of both values at the end of the Jupyter Notebook.
